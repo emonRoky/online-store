@@ -1,0 +1,131 @@
+main {
+  min-height: 80vh;
+}
+
+.banner__text{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 250%;
+    color: #fff;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+.title{
+  text-align: center;
+  margin:50px 0 50px 0;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  border-radius: 100px;
+  outline: none;
+  -webkit-transition: background-color 0.2s,color 0.2s;
+  transition: background-color 0.2s,color 0.2s;
+}
+.primary__btn{
+  background-color: #FBB03B;
+  color: #fff;
+}
+.secondery__btn{
+background-color: #fff;
+color: black;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+
+/* banner section */
+
+.banner__entro{
+  -webkit-transform: translateY(160px);
+  transform: translateY(160px);
+  padding-left: 100px;
+}
+.banner__icon{
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.icon__text{
+  padding-left: 15px;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* facilites__section */
+
+.facilites__section{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  width: 85%;
+  z-index: 1;
+  bottom: -95px;
+  border-top-right-radius: 80px 80px;
+  border-bottom: 1px dotted black;
+}
+.custommer__facilitise{
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.service__text{
+  font-size: 80%;
+  line-height: 145%;
+  padding-top: 5px;
+}
+.service__title{
+  font-size: 80%;
+}
+.faci__icon,
+.facilitise{
+ padding-left: 20px;
+}
+.faci__icon{
+  margin-top:5px;
+}
+
