@@ -33,7 +33,7 @@ const OrderListScreen = ({ history }) => {
       ) : (
         <Table striped bordered hover responsive className='table-sm'>
           <thead>
-            <tr>
+            <tr className="table-primary">
               <th>ID</th>
               <th>USER</th>
               <th>DATE</th>
@@ -45,7 +45,7 @@ const OrderListScreen = ({ history }) => {
           </thead>
           <tbody>
             {orders.map((order) => (
-              <tr key={order._id}>
+              <tr key={order._id} className="table-info">
                 <td>{order._id}</td>
                 <td>{order.user && order.user.name}</td>
                 <td>{order.createdAt.substring(0, 10)}</td>

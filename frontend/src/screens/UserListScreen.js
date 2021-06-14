@@ -42,7 +42,7 @@ const UserListScreen = ({ history }) => {
       ) : (
         <Table striped bordered hover responsive className='table-sm'>
           <thead>
-            <tr>
+            <tr className="table-primary">
               <th>ID</th>
               <th>NAME</th>
               <th>EMAIL</th>
@@ -52,7 +52,7 @@ const UserListScreen = ({ history }) => {
           </thead>
           <tbody>
             {users.map((user) => (
-              <tr key={user._id}>
+              <tr  key={user._id}  className="table-info">
                 <td>{user._id}</td>
                 <td>{user.name}</td>
                 <td>
@@ -67,7 +67,7 @@ const UserListScreen = ({ history }) => {
                 </td>
                 <td>
                   <LinkContainer to={`/admin/user/${user._id}/edit`}>
-                    <Button variant='light' className='btn-sm'>
+                    <Button variant='info' className='btn-sm btn-info'>
                       <i className='fas fa-edit'></i>
                     </Button>
                   </LinkContainer>

@@ -3,9 +3,8 @@ import { Spinner } from 'react-bootstrap'
 
 const Loader = () => {
   return (
-    <Spinner
-      animation='border'
-      role='status'
+    <div
+      class="spinner-border text-warning"
       style={{
         width: '100px',
         height: '100px',
@@ -14,7 +13,7 @@ const Loader = () => {
       }}
     >
       <span className='sr-only'>Loading...</span>
-    </Spinner>
+    </div>
   )
 }
 

@@ -113,13 +113,6 @@ const HomeScreen = ({ match }) => {
             </Container>
             </div>
             <Meta></Meta>
-      {/* {!keyword ? (
-        <ProductCarousel />
-      ) : (
-        <Link to='/' className='btn btn-light'>
-          Go Back
-        </Link>
-      )} */}
       {loading ? (
         <Loader />
       ) : error ? (
@@ -137,7 +130,13 @@ const HomeScreen = ({ match }) => {
               </Col>
             ))}
           </Row>
+          <Paginate
+            pages={pages}
+            page={page}
+            keyword={keyword ? keyword : ''}
+          />
         </Container>
+
 
         {!keyword ? (
         <ProductCarousel />
@@ -147,11 +146,7 @@ const HomeScreen = ({ match }) => {
         </Link>
       )}
           
-          <Paginate
-            pages={pages}
-            page={page}
-            // keyword={keyword ? keyword : ''}
-          />
+         
         </>
       )}
     </>
